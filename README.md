@@ -10,3 +10,11 @@ npm run client
 
 Run Backend:
 npm run server
+
+
+.env
+ NODE_ENV  = 'development'
+PORT = 8000 
+MONGO_URI  
+JWT_SECRET 
+JWT_EXPIRE = 30d
