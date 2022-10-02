@@ -3,6 +3,7 @@ const path = require("path");
 const colors = require("colors");
 const dotenv = require("dotenv").config();
 const port = process.env.PORT || 5000;
+
 const connectDb = require("./config/db");
 const goalRoutes = require("./routes/goalRoutes");
 const userRoutes = require("./routes/userRoutes");

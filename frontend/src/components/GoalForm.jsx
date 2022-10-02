@@ -1,18 +1,18 @@
-import { useState } from 'react'
-import { useDispatch } from 'react-redux'
-import { createGoal } from '../features/goals/goalSlice'
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { createGoal } from '../features/goals/goalSlice';
 
 function GoalForm() {
-  const [text, setText] = useState('')
+  const [text, setText] = useState('');
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
-  const onSubmit = (e) => {
-    e.preventDefault()
+  const onSubmit = e => {
+    e.preventDefault();
 
-    dispatch(createGoal({ text }))
-    setText('')
-  }
+    dispatch(createGoal({ text }));
+    setText('');
+  };
 
   return (
     <section className='form'>
@@ -24,7 +24,7 @@ function GoalForm() {
             name='text'
             id='text'
             value={text}
-            onChange={(e) => setText(e.target.value)}
+            onChange={e => setText(e.target.value)}
           />
         </div>
         <div className='form-group'>
@@ -34,7 +34,7 @@ function GoalForm() {
         </div>
       </form>
     </section>
-  )
+  );
 }
 
-export default GoalForm
+export default GoalForm;
