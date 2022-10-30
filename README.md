@@ -1,6 +1,6 @@
 # goals-app
 
-Goals setting app using the React , Express ,MongoDB, Redux , @reduxjs/toolkit , react-toastify , react-icons, jsonwebtoken, bcryptjs, express-async-handler, mongose, concurrently
+Goals setting app using the React , Express ,MongoDB, Redux , @reduxjs/toolkit , react-toastify , react-icons, jsonwebtoken, bcryptjs, express-async-handler, mongoose, concurrently
 
 Run both frontend and backend:
 npm run dev
